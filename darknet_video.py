@@ -10,7 +10,7 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 
 import rospy
-from robosub_msgs.msg import Detection, DetectionArray
+from msg import Detection, DetectionArray
 from sensor_msgs.msg import Image
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
@@ -18,7 +18,6 @@ from cv_bridge import CvBridge, CvBridgeError
 from ctypes import *
 import math
 import random
-# import os
 import time
 import darknet
 
